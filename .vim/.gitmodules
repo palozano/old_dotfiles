@@ -1,0 +1,30 @@
+[submodule "pack/airblade/start/vim-gitgutter"]
+	path = pack/airblade/start/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "pack/junegunn/start/vim-easy-align"]
+	path = pack/junegunn/start/vim-easy-align
+	url = https://github.com/junegunn/vim-easy-align.git
+[submodule "pack/junegunn/start/gv.vim"]
+	path = pack/junegunn/start/gv.vim
+	url = https://github.com/junegunn/gv.vim.git
+[submodule "pack/sodapopcan/start/vim-twiggy"]
+	path = pack/sodapopcan/start/vim-twiggy
+	url = https://github.com/sodapopcan/vim-twiggy.git
+[submodule "pack/themes/start/darcula"]
+	path = pack/themes/start/darcula
+	url = https://github.com/doums/darcula
+[submodule "pack/tpope/start/vim-commentary"]
+	path = pack/tpope/start/commentary
+	url = https://github.com/tpope/vim-commentary.git
+[submodule "pack/tpope/start/fugitive"]
+	path = pack/tpope/start/fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "pack/tpope/start/repeat"]
+	path = pack/tpope/start/repeat
+	url = https://github.com/tpope/vim-repeat.git
+[submodule "pack/tpope/start/sensible"]
+	path = pack/tpope/start/sensible
+	url = https://github.com/tpope/vim-sensible.git
+[submodule "pack/tpope/start/surround"]
+	path = pack/tpope/start/surround
+	url = https://github.com/tpope/vim-surround.git
