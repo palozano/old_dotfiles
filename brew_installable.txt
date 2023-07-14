@@ -1,1 +1,1 @@
-brew install bat btop exa gh lazygit watson tree taskell dooit nvim jq fzf ripgrep fd gdu tz zellij
+brew install bat btop exa gh lazygit watson tree taskell dooit nvim jq fzf ripgrep fd gdu tz zellij ugrep

@@ -264,6 +264,9 @@ vim.keymap.set("n", "-", require("oil").open_float, { desc = "Open parent direct
 -- Show the current line
 vim.o.cursorline = true
 
+-- Some scroll off when moving around
+vim.o.scrolloff = 4
+
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
 local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
