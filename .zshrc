@@ -86,14 +86,16 @@ source $ZSH/oh-my-zsh.sh
 # export ARCHFLAGS="-arch x86_64"
 
 alias rrm=trash
-alias zshconfig="vi ~/.zshrc"
+alias zconf="kick ~/.zshrc && source ~/.zshrc"
 alias lg="lazygit"
-alias ls="exa"
+alias ls="exa -l -g --icons --git"
+alias llt="exa -1 --icons --tree --git-ignore"
 # alias mv="mv -v"
 alias tz="TZ_LIST=\"Europe/Lisbon;Europe/London;US/Eastern,US-East;US/Pacific,US-Pacific;UTC\" tz"
 
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 
+# Editors
 alias purcell="emacs --with-profile purcell"
 alias vanilla="emacs --with-profile vanilla"
 alias prelude="emacs --with-profile prelude"
@@ -102,13 +104,11 @@ alias astro="NVIM_APPNAME=AstroNvim nvim"
 alias lazy="NVIM_APPNAME=LazyNvim nvim"
 alias kick="NVIM_APPNAME=kickstart nvim"
 alias chad="NVIM_APPNAME=NvChad nvim"
+alias lvim="NVIM_APPNAME=llvim nvim"
 alias lunar="lvim"
 
-# export EDITOR="code --wait"
-export EDITOR="nvim"
-
 function nvims() {
-    items=("default" "clean" "kickstart" "LazyNvim" "AstroNvim" "NvChad" "LunarVim")
+    items=("default" "clean" "kickstart" "LazyNvim" "AstroNvim" "NvChad" "LunarVim" "lvim")
     config=$(printf "%s\n" "${items[@]}" | fzf --prompt=" Choose a Neovim config: " --height=~50% --layout=reverse --border --exit-0)
     if [[ -z $config ]]; then
         echo "Nothing selected"
@@ -124,6 +124,9 @@ function nvims() {
     fi
 }
 # bindkey -s ^o "nvims\n" 
+
+# export EDITOR="code --wait"
+export EDITOR="nvim"
 
 
 PATH="/Applications/CMake.app/Contents/bin":"$PATH"
