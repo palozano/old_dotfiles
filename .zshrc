@@ -89,6 +89,7 @@ alias rrm=trash
 alias zconf="kick ~/.zshrc && source ~/.zshrc"
 alias lg="lazygit"
 alias ls="exa -l -g --icons --git"
+alias lt="exa -1 -a --icons --tree --git-ignore"
 alias llt="exa -1 --icons --tree --git-ignore"
 # alias mv="mv -v"
 alias tz="TZ_LIST=\"Europe/Lisbon;Europe/London;US/Eastern,US-East;US/Pacific,US-Pacific;UTC\" tz"

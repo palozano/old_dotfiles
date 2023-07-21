@@ -36,7 +36,7 @@ I hope you enjoy your Neovim journey,
 P.S. You can delete this when you're done too. It's your config now :)
 --]]
 
-
+-- TODO: read this whole file many times
 
 -- Set <space> as the leader key
 -- See `:help mapleader`
@@ -217,7 +217,9 @@ require('lazy').setup({
   --
   --    For additional information see: https://github.com/folke/lazy.nvim#-structuring-your-plugins
   { import = 'custom.plugins' },
+  -- { import = 'custom.handmade' },
 }, {})
+
 
 -- [[ Setting options ]]
 -- See `:help vim.o`
@@ -605,6 +607,21 @@ require('onedark').setup {
     background = true, -- use background color for virtual text
   },
 }
+
+-- Magit for vim
+-- For more, see: https://github.com/NeogitOrg/neogit
+local neogit = require('neogit')
+neogit.setup {}
+vim.keymap.set('n', '<leader>gg', ':Neogit<CR>', { desc = 'Open Neogit' })
+
+-- Format the current buffer
+vim.keymap.set('n', '<leader>Fb', function() vim.lsp.buf.format({ async = true }) end,
+  { desc = '[F]ormat the current [b]uffer' })
+
+
+-- You can load your handmade plugins in here too!
+vim.keymap.set('n', '<leader>tt', function() require('custom.handmade.todolist').todolist() end, { desc = 'Open todolist' })
+
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
