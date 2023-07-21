@@ -8,10 +8,9 @@ return  {
         auto_trigger = true,
         debounce = 75,
         keymap = {
-          accept = "<Tab>",
-          next = "]]",
-          prev = "[[",
-
+          accept = "<M-Tab>",
+          next = "<right>",
+          prev = "<left>",
         }
       }
     })
