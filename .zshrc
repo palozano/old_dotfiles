@@ -131,6 +131,8 @@ export EDITOR="nvim"
 
 alias search="fzf --preview 'bat --color=always --style=numbers --line-range=:500 {}' | xargs nvim"
 
+alias tldrf='tldr --list | fzf --preview "tldr {1} --color=always" --preview-window=right,70% | xargs tldr'
+
 PATH="/Applications/CMake.app/Contents/bin":"$PATH"
 
 export NVM_DIR="$HOME/.nvm"
